@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>البراء لزيت الزيتون | Al-Baraa Olive Oil - مرسى مطروح</title>
-  <meta name="description" content="البراء لزيت الزيتون البكر الممتاز - عصرة أولى على البارد طبيعي 100% من مزارع مرسى مطروح وسيوة إلى بيتك مباشر. توصيل داخل مطروح ولجميع محافظات مصر." />
-  
+  <title>أوليرا لزيت الزيتون | Olira Olive Oil - مرسى مطروح</title>
+  <meta name="description" content="أوليرا لزيت الزيتون البكر الممتاز (Olira Olive Oil) - عصرة أولى على البارد وعصرة أولى على الحار طبيعي 100% من مزارع مرسى مطروح وسيوة إلى بيتك مباشر. توصيل داخل مطروح ولجميع محافظات مصر." />
+  <link rel="icon" type="image/jpeg" href="Images/بروفايل.jpeg" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,8 @@
       --gold-primary: #B6913E;
       --gold-light: #D5B467;
       --gold-pale: #EFE4C8;
+      --warm-amber: #B45309;
+      --warm-amber-light: #FEF3C7;
       --text-dark: #1C261E;
       --text-muted: #5A655C;
       --border-gold: rgba(182, 145, 62, 0.35);
@@ -119,7 +122,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(251, 248, 241, 0.88);
+      background: rgba(251, 248, 241, 0.9);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border-gold);
@@ -129,7 +132,7 @@
     .nav-container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 14px 24px;
+      padding: 12px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -143,17 +146,21 @@
     }
 
     .brand-emblem {
-      width: 48px;
-      height: 48px;
+      width: 54px;
+      height: 54px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--olive-primary), var(--olive-dark));
       border: 2px solid var(--gold-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold-light);
-      font-size: 1.4rem;
-      box-shadow: 0 4px 12px rgba(22, 46, 27, 0.2);
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(22, 46, 27, 0.22);
+      flex-shrink: 0;
+      background: var(--bg-cream);
+    }
+
+    .brand-emblem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .brand-text {
@@ -162,7 +169,7 @@
     }
 
     .brand-name {
-      font-size: 1.7rem;
+      font-size: 1.75rem;
       font-weight: 800;
       color: var(--olive-dark);
       line-height: 1.1;
@@ -179,7 +186,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 26px;
       list-style: none;
     }
 
@@ -187,7 +194,7 @@
       text-decoration: none;
       color: var(--text-dark);
       font-weight: 600;
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       transition: var(--transition);
       position: relative;
       padding: 4px 0;
@@ -268,7 +275,7 @@
     /* Hero Section */
     .hero {
       position: relative;
-      padding: 70px 24px 90px;
+      padding: 65px 24px 90px;
       overflow: hidden;
       background: 
         radial-gradient(circle at 80% 20%, rgba(182, 145, 62, 0.14) 0%, transparent 45%),
@@ -287,10 +294,34 @@
     }
 
     .hero-content {
-      max-width: 900px;
+      max-width: 920px;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .hero-logo-circle {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-primary);
+      box-shadow: 0 14px 35px rgba(22, 46, 27, 0.18);
+      overflow: hidden;
+      margin-bottom: 18px;
+      background: var(--bg-cream);
+      transition: var(--transition);
+    }
+
+    .hero-logo-circle:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .hero-logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .hero-badge {
@@ -304,7 +335,7 @@
       border-radius: 50px;
       font-size: 0.9rem;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .hero-badge i {
@@ -339,7 +370,7 @@
       font-size: 1.15rem;
       color: var(--text-muted);
       margin-bottom: 32px;
-      max-width: 720px;
+      max-width: 760px;
     }
 
     .hero-cta-group {
@@ -401,7 +432,7 @@
       padding-top: 24px;
       border-top: 1px solid var(--border-gold);
       width: 100%;
-      max-width: 820px;
+      max-width: 860px;
       text-align: start;
     }
 
@@ -413,8 +444,8 @@
     }
 
     .trust-pill-icon {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
       background: #fff;
       border: 1px solid var(--border-gold);
@@ -422,19 +453,19 @@
       align-items: center;
       justify-content: center;
       color: var(--gold-primary);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       flex-shrink: 0;
     }
 
     .trust-pill-text strong {
       display: block;
-      font-size: 0.92rem;
+      font-size: 0.93rem;
       color: var(--olive-dark);
       line-height: 1.2;
     }
 
     .trust-pill-text span {
-      font-size: 0.78rem;
+      font-size: 0.79rem;
       color: var(--text-muted);
     }
 
@@ -525,7 +556,7 @@
 
     .section-header {
       text-align: center;
-      max-width: 700px;
+      max-width: 740px;
       margin: 0 auto 55px;
     }
 
@@ -659,6 +690,84 @@
       position: relative;
     }
 
+    .press-category-block {
+      margin-bottom: 58px;
+    }
+
+    .press-category-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      background: var(--bg-card);
+      border: 2px solid var(--gold-primary);
+      border-radius: var(--radius-md);
+      padding: 20px 28px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .press-category-header.hot-press {
+      border-color: #D97706;
+      background: linear-gradient(135deg, #FFFBEB 0%, #FFFFFF 100%);
+    }
+
+    .press-title-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .press-type-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--olive-primary), var(--olive-dark));
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.55rem;
+      flex-shrink: 0;
+    }
+
+    .press-category-header.hot-press .press-type-icon {
+      background: linear-gradient(135deg, #D97706, #92400E);
+      color: #FEF3C7;
+    }
+
+    .press-title-group h3 {
+      font-size: 1.65rem;
+      color: var(--olive-dark);
+      line-height: 1.25;
+    }
+
+    .press-title-group p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .press-tag-pill {
+      background: rgba(36, 71, 43, 0.1);
+      color: var(--olive-primary);
+      border: 1px solid rgba(36, 71, 43, 0.25);
+      padding: 7px 18px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .press-category-header.hot-press .press-tag-pill {
+      background: rgba(217, 119, 6, 0.12);
+      color: #92400E;
+      border-color: rgba(217, 119, 6, 0.35);
+    }
+
     .packages-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -688,6 +797,10 @@
       right: 0;
       height: 6px;
       background: linear-gradient(90deg, var(--olive-primary), var(--gold-primary));
+    }
+
+    .package-card.hot-card::before {
+      background: linear-gradient(90deg, #D97706, var(--gold-primary));
     }
 
     .package-card.featured {
@@ -727,6 +840,12 @@
       padding: 6px 14px;
       border-radius: 50px;
       border: 1px solid rgba(36, 71, 43, 0.2);
+    }
+
+    .package-card.hot-card .package-badge {
+      background: rgba(217, 119, 6, 0.12);
+      color: #92400E;
+      border-color: rgba(217, 119, 6, 0.3);
     }
 
     .package-card.featured .package-badge {
@@ -892,7 +1011,7 @@
 
     /* Payment Options Box inside Packages Section */
     .payment-options-wrapper {
-      margin-top: 44px;
+      margin-top: 16px;
       background: linear-gradient(135deg, #fff 0%, var(--bg-sand) 100%);
       border: 2px solid var(--gold-primary);
       border-radius: var(--radius-lg);
@@ -1004,6 +1123,7 @@
     .label-tabs {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 14px;
       margin-bottom: 32px;
     }
@@ -1040,8 +1160,11 @@
 
     .label-preview-box img {
       width: 100%;
+      max-height: 620px;
+      object-fit: contain;
       border-radius: var(--radius-md);
       display: block;
+      margin: 0 auto;
     }
 
     /* Delivery Banner Section */
@@ -1141,7 +1264,7 @@
       align-items: stretch;
     }
 
-    /* Working Hours Card - Inspired by User's Screenshot + Brand Luxury */
+    /* Working Hours Card */
     .hours-card {
       background: #141915;
       color: #f1f1f1;
@@ -1495,8 +1618,9 @@
       .delivery-banner,
       .hours-card,
       .distributor-card,
-      .variety-card {
-        padding: 26px 20px;
+      .variety-card,
+      .press-category-header {
+        padding: 24px 18px;
       }
 
       .btn-order-nav span {
@@ -1517,8 +1641,8 @@
       </div>
       <div class="top-bar-item">
         <i class="fa-solid fa-leaf"></i>
-        <span data-lang="ar">عصرة أولى على البارد - طبيعي 100% من المعصرة إلى بيتك</span>
-        <span data-lang="en">First Cold Pressed - 100% Natural From the Press to Your Home</span>
+        <span data-lang="ar">عصرة أولى (على البارد & على الحار) - طبيعي 100% من المعصرة إلى بيتك</span>
+        <span data-lang="en">First Cold & Hot Pressed - 100% Natural From the Press to Your Home</span>
       </div>
     </div>
   </div>
@@ -1528,11 +1652,11 @@
     <div class="nav-container">
       <a href="#" class="brand-logo">
         <div class="brand-emblem">
-          <i class="fa-solid fa-bottle-droplet"></i>
+          <img src="Images/بروفايل.jpeg" alt="Olira Olive Oil Logo" />
         </div>
         <div class="brand-text">
-          <span class="brand-name serif-title" data-lang="ar">البَـرَاءُ</span>
-          <span class="brand-name serif-title" data-lang="en">AL-BARAA</span>
+          <span class="brand-name serif-title" data-lang="ar">أُولِـيـرَا</span>
+          <span class="brand-name serif-title" data-lang="en">OLIRA</span>
           <span class="brand-sub" data-lang="ar">لزيت الزيتون البكر الممتاز</span>
           <span class="brand-sub" data-lang="en">EXTRA VIRGIN OLIVE OIL</span>
         </div>
@@ -1554,7 +1678,7 @@
         <li>
           <a href="#identity">
             <span data-lang="ar">هوية البراند</span>
-            <span data-lang="en">Brand Label</span>
+            <span data-lang="en">Brand Identity</span>
           </a>
         </li>
         <li>
@@ -1597,6 +1721,10 @@
   <section class="hero">
     <div class="hero-container">
       <div class="hero-content">
+        <div class="hero-logo-circle">
+          <img src="Images/بروفايل.jpeg" alt="شعار أوليرا لزيت الزيتون - Olira Olive Oil" />
+        </div>
+
         <div class="hero-badge">
           <i class="fa-solid fa-award"></i>
           <span data-lang="ar">إنتاج محافظة مطروح، مصر • جودة فائقة</span>
@@ -1604,46 +1732,46 @@
         </div>
 
         <h1 class="hero-title" data-lang="ar">
-          زيت زيتون <span>البَـرَاءُ</span><br />نقاء الطبيعة في كل قطرة
+          زيت زيتون <span>أُولِـيـرَا (Olira)</span><br />نقاء الطبيعة في كل قطرة
         </h1>
         <h1 class="hero-title" data-lang="en">
-          <span>AL-BARAA</span> Olive Oil<br />Pure Nature in Every Drop
+          <span>OLIRA</span> Olive Oil<br />Pure Nature in Every Drop
         </h1>
 
         <div class="hero-slogan">
           <i class="fa-solid fa-seedling"></i>
-          <span data-lang="ar">من المعصرة إلى بيتك — زيت زيتون بكر ممتاز</span>
-          <span data-lang="en">From the Press to Your Home — Extra Virgin Olive Oil</span>
+          <span data-lang="ar">من المعصرة إلى بيتك — زيت زيتون بكر ممتاز طبيعي 100%</span>
+          <span data-lang="en">From the Press to Your Home — 100% Natural Extra Virgin Olive Oil</span>
         </div>
 
         <p class="hero-desc" data-lang="ar">
-          نقدم لكم أجود أنواع زيت الزيتون البكر الممتاز من أشجار مرسى مطروح وواحة سيوة المباركة، معصور على البارد (عصرة أولى) ليحتفظ بكامل قيمته الغذائية ونكهته الأصيلة الطبيعية 100%.
+          نقدم لكم أجود أنواع زيت الزيتون البكر الممتاز من مزارع مرسى مطروح وواحة سيوة المباركة، متوفر بنوعين: <strong>عصرة أولى على البارد</strong> و<strong>عصرة أولى على الحار</strong> ليحتفظ بكامل قيمته الغذائية ونكهته الأصيلة الطبيعية 100%.
         </p>
         <p class="hero-desc" data-lang="en">
-          Discover the finest Extra Virgin Olive Oil harvested from the blessed groves of Marsa Matrouh and Siwa Oasis. First cold pressed to preserve 100% of its natural nutrients, rich aroma, and authentic taste.
+          Discover the finest Extra Virgin Olive Oil harvested from the blessed groves of Marsa Matrouh and Siwa Oasis. Available in both <strong>First Cold Pressed</strong> and <strong>First Hot Pressed</strong> varieties, preserving 100% natural nutrients and authentic flavor.
         </p>
 
         <div class="hero-cta-group">
-          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1" target="_blank" rel="noopener" class="btn-primary">
+          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)" target="_blank" rel="noopener" class="btn-primary">
             <i class="fa-brands fa-whatsapp"></i>
             <span data-lang="ar">اطلب عبر واتساب الآن</span>
             <span data-lang="en">Order via WhatsApp</span>
           </a>
-          <a href="#contact" class="btn-secondary">
-            <i class="fa-solid fa-phone-volume"></i>
-            <span data-lang="ar">جميع وسائل التواصل</span>
-            <span data-lang="en">All Contact Channels</span>
+          <a href="#packages" class="btn-secondary">
+            <i class="fa-solid fa-tags"></i>
+            <span data-lang="ar">استعرض الباقات والأسعار</span>
+            <span data-lang="en">View Packages & Prices</span>
           </a>
         </div>
 
         <div class="hero-trust-pills">
           <div class="trust-pill">
-            <div class="trust-pill-icon"><i class="fa-solid fa-snowflake"></i></div>
+            <div class="trust-pill-icon"><i class="fa-solid fa-temperature-low"></i></div>
             <div class="trust-pill-text">
-              <strong data-lang="ar">عصرة أولى على البارد</strong>
-              <strong data-lang="en">First Cold Pressed</strong>
-              <span data-lang="ar">حفظ كامل للفيتامينات</span>
-              <span data-lang="en">Maximum nutrients</span>
+              <strong data-lang="ar">عصرة أولى (بارد & حار)</strong>
+              <strong data-lang="en">First Cold & Hot Pressed</strong>
+              <span data-lang="ar">خيارات تناسب كل الأذواق</span>
+              <span data-lang="en">Tailored to your preference</span>
             </div>
           </div>
           <div class="trust-pill">
@@ -1670,14 +1798,14 @@
       <!-- Hero Visual showing the actual bottle label -->
       <div class="hero-visual">
         <div class="label-frame">
-          <img src="Images/شريط القارورة عربي.jpeg" alt="شريط قارورة زيت زيتون البراء عربي" class="label-img" data-lang="ar" />
-          <img src="Images/شريط القارورة إنجليزي.jpeg" alt="Al-Baraa Olive Oil Bottle Label English" class="label-img" data-lang="en" />
+          <img src="Images/شريط القارورة عربي.jpeg" alt="شريط قارورة زيت زيتون أوليرا Olira" class="label-img" data-lang="ar" />
+          <img src="Images/شريط القارورة إنجليزي.jpeg" alt="Olira Olive Oil Bottle Label" class="label-img" data-lang="en" />
           
           <div class="floating-badge">
             <i class="fa-solid fa-certificate"></i>
             <div>
-              <strong data-lang="ar">ضمان الجودة الأصيلة</strong>
-              <strong data-lang="en">Authentic Quality Seal</strong>
+              <strong data-lang="ar">ضمان الجودة الأصيلة — أوليرا</strong>
+              <strong data-lang="en">Olira Authentic Quality Seal</strong>
               <span data-lang="ar">مرسى مطروح • سيوة</span>
               <span data-lang="en">Marsa Matrouh • Siwa</span>
             </div>
@@ -1693,13 +1821,13 @@
       <div class="section-header">
         <span class="section-tag" data-lang="ar">خياراتنا المميزة</span>
         <span class="section-tag" data-lang="en">Premium Selection</span>
-        <h2 class="section-title" data-lang="ar">أصناف زيت زيتون البراء</h2>
-        <h2 class="section-title" data-lang="en">Al-Baraa Olive Oil Varieties</h2>
+        <h2 class="section-title" data-lang="ar">أصناف زيت زيتون أوليرا (Olira)</h2>
+        <h2 class="section-title" data-lang="en">Olira Olive Oil Varieties</h2>
         <p class="section-subtitle" data-lang="ar">
-          نختار لكم أفضل ثمار الزيتون من مزارع محافظة مطروح وواحة سيوة لنقدم زيتاً يجمع بين الطعم الفريد والفائدة الصحية العالية.
+          نختار لكم أفضل ثمار الزيتون من مزارع محافظة مطروح وواحة سيوة، ونوفرها لكم بعصرة أولى على البارد وعصرة أولى على الحار.
         </p>
         <p class="section-subtitle" data-lang="en">
-          Handpicked olives from Marsa Matrouh and Siwa Oasis, cold-pressed to perfection for unmatched flavor and health benefits.
+          Handpicked olives from Marsa Matrouh and Siwa Oasis, available in both First Cold Pressed and First Hot Pressed options.
         </p>
       </div>
 
@@ -1726,22 +1854,22 @@
             <ul class="variety-specs">
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">عصرة أولى على البارد — طبيعي 100%</span>
-                <span data-lang="en">First Cold Pressed — 100% Natural</span>
+                <span data-lang="ar">متوفر: عصرة أولى على البارد & عصرة أولى على الحار</span>
+                <span data-lang="en">Available: First Cold Pressed & First Hot Pressed</span>
               </li>
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">مثالي للسلطات، التغميس، والطهي الصحي</span>
-                <span data-lang="en">Ideal for salads, dipping, and healthy cooking</span>
+                <span data-lang="ar">مثالي للسلطات، التغميس، والطهي الصحي اليومي</span>
+                <span data-lang="en">Ideal for salads, dipping, and daily healthy cooking</span>
               </li>
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">من المعصرة إلى بيتك بتغليف آمن ومحكم</span>
-                <span data-lang="en">From the press to your home in secure packaging</span>
+                <span data-lang="ar">من المعصرة إلى بيتك بتغليف آمن ومحكم 100%</span>
+                <span data-lang="en">From the press to your home in 100% secure packaging</span>
               </li>
             </ul>
           </div>
-          <a href="https://wa.me/201284935279?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D9%85%D8%B1%D8%B3%D9%89%20%D9%85%D8%B7%D8%B1%D9%88%D8%AD" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center;">
+          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(%D9%85%D8%B1%D8%B3%D9%89%20%D9%85%D8%B7%D8%B1%D9%88%D8%AD)" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center;">
             <i class="fa-brands fa-whatsapp"></i>
             <span data-lang="ar">اطلب زيت زيتون مرسى مطروح</span>
             <span data-lang="en">Order Marsa Matrouh Olive Oil</span>
@@ -1770,22 +1898,22 @@
             <ul class="variety-specs">
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">عصرة أولى على البارد — طبيعي 100%</span>
-                <span data-lang="en">First Cold Pressed — 100% Natural</span>
+                <span data-lang="ar">متوفر: عصرة أولى على البارد & عصرة أولى على الحار</span>
+                <span data-lang="en">Available: First Cold Pressed & First Hot Pressed</span>
               </li>
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">غني بالأوميجا والفيتامينات الصحية للقلب</span>
+                <span data-lang="ar">غني بالأوميجا والفيتامينات الصحية للقلب والمناعة</span>
                 <span data-lang="en">Rich in heart-healthy Omega fatty acids & vitamins</span>
               </li>
               <li>
                 <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">إنتاج حديث — جودة فائقة مضمونة</span>
-                <span data-lang="en">Fresh harvest — Guaranteed premium quality</span>
+                <span data-lang="ar">إنتاج حديث (15 / 11 / 2026) — جودة فائقة مضمونة</span>
+                <span data-lang="en">Fresh harvest (15 / 11 / 2026) — Guaranteed quality</span>
               </li>
             </ul>
           </div>
-          <a href="https://wa.me/201284935279?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%B3%D9%8A%D9%88%D8%A9" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center;">
+          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(%D8%B3%D9%8A%D9%88%D8%A9)" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center;">
             <i class="fa-brands fa-whatsapp"></i>
             <span data-lang="ar">اطلب زيت زيتون سيوة</span>
             <span data-lang="en">Order Siwa Olive Oil</span>
@@ -1795,205 +1923,433 @@
     </div>
   </section>
 
-  <!-- Packages & Pricing Section -->
+  <!-- Packages & Pricing Section (Cold Pressed & Hot Pressed) -->
   <section id="packages" class="packages-section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag" data-lang="ar">عروض وباقات التوفير</span>
         <span class="section-tag" data-lang="en">Special Value Packages</span>
-        <h2 class="section-title" data-lang="ar">باقات وأسعار زيت زيتون البراء</h2>
-        <h2 class="section-title" data-lang="en">Al-Baraa Packages & Pricing</h2>
+        <h2 class="section-title" data-lang="ar">باقات وأسعار زيت زيتون أوليرا (Olira)</h2>
+        <h2 class="section-title" data-lang="en">Olira Olive Oil Packages & Pricing</h2>
         <p class="section-subtitle" data-lang="ar">
-          اختر الباقة الأنسب لاحتياجك واضغط على أيقونة الواتساب للطلب الفوري برسالة جاهزة تحتوي على تفاصيل باقتك.
+          اختر نوع العصرة والباقة الأنسب لاحتياجك واضغط على زر الواتساب للطلب الفوري برسالة جاهزة تحتوي على تفاصيل باقتك.
         </p>
         <p class="section-subtitle" data-lang="en">
-          Choose the package that best fits your needs and click the WhatsApp icon for instant ordering with a pre-filled message.
+          Select your preferred press type and package, then click the WhatsApp button for instant ordering with a pre-filled message.
         </p>
       </div>
 
-      <div class="packages-grid">
-        <!-- Package 1: Daily Home & Tasting Pack -->
-        <div class="package-card">
-          <div>
-            <div class="package-top-bar">
-              <span class="package-badge">
-                <i class="fa-solid fa-house-chimney"></i>
-                <span data-lang="ar">للاستخدام المنزلي</span>
-                <span data-lang="en">Home & Tasting</span>
-              </span>
-              <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20Daily%20Home%20%26%20Tasting%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
+      <!-- 1. FIRST COLD PRESSED PACKAGES -->
+      <div class="press-category-block">
+        <div class="press-category-header">
+          <div class="press-title-group">
+            <div class="press-type-icon">
+              <i class="fa-solid fa-snowflake"></i>
             </div>
-
-            <h3 class="package-title" data-lang="ar">باقة البيت والتذوق</h3>
-            <h3 class="package-title" data-lang="en">Daily Home & Tasting Pack</h3>
-            <span class="package-sub-en" data-lang="ar">Daily Home & Tasting Pack</span>
-            <span class="package-sub-en" data-lang="en">باقة البيت والتذوق</span>
-
-            <div class="package-qty-pill">
-              <i class="fa-solid fa-scale-balanced"></i>
-              <span data-lang="ar">الكمية: من 1 كيلو إلى 9 كيلو</span>
-              <span data-lang="en">Quantity: From 1 kg to 9 kg</span>
+            <div>
+              <h3 data-lang="ar">أولاً: باقات عصرة أولى على البارد (First Cold Pressed)</h3>
+              <h3 data-lang="en">1. First Cold Pressed Packages</h3>
+              <p data-lang="ar">أعلى قيمة غذائية ونكهة طازجة — متوفر (مرسى مطروح / سيوة)</p>
+              <p data-lang="en">Maximum nutritional value & fresh aroma — Available (Marsa Matrouh / Siwa)</p>
             </div>
-
-            <div class="package-price-box">
-              <div class="price-main-row">
-                <span class="price-amount">450</span>
-                <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
-                <span class="price-currency" data-lang="en">EGP / kg</span>
-                <span class="price-old" data-lang="ar">500 ج</span>
-                <span class="price-old" data-lang="en">500 EGP</span>
-              </div>
-              <div class="savings-pill">
-                <i class="fa-solid fa-tag"></i>
-                <span data-lang="ar">بدلاً من 500 جنيه — توفير 50 جنيه في كل كيلو</span>
-                <span data-lang="en">Instead of 500 EGP — Save 50 EGP per kg</span>
-              </div>
-            </div>
-
-            <ul class="package-features">
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">عصرة أولى على البارد — طبيعي 100%</span>
-                <span data-lang="en">First cold pressed — 100% natural</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">مثالية للتجربة والاستهلاك المنزلي اليومي</span>
-                <span data-lang="en">Ideal for tasting & daily home use</span>
-              </li>
-            </ul>
           </div>
-
-          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20Daily%20Home%20%26%20Tasting%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="btn-package-wa">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span data-lang="ar">اطلب باقة البيت عبر واتساب</span>
-            <span data-lang="en">Order Home Pack via WhatsApp</span>
-          </a>
+          <span class="press-tag-pill">
+            <i class="fa-solid fa-leaf"></i>
+            <span data-lang="ar">خصومات من 550 ج للكيلو</span>
+            <span data-lang="en">Discounted from 550 EGP/kg</span>
+          </span>
         </div>
 
-        <!-- Package 2: Family & Group Value Pack (Featured) -->
-        <div class="package-card featured">
-          <div>
-            <div class="package-top-bar">
-              <span class="package-badge">
-                <i class="fa-solid fa-crown"></i>
-                <span data-lang="ar">الأكثر طلباً وتوفيراً</span>
-                <span data-lang="en">Most Popular Value</span>
-              </span>
-              <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20Family%20%26%20Group%20Value%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20400%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-
-            <h3 class="package-title" data-lang="ar">باقة العيلة والتوفير</h3>
-            <h3 class="package-title" data-lang="en">Family & Group Value Pack</h3>
-            <span class="package-sub-en" data-lang="ar">Family & Group Value Pack</span>
-            <span class="package-sub-en" data-lang="en">باقة العيلة والتوفير</span>
-
-            <div class="package-qty-pill">
-              <i class="fa-solid fa-people-group"></i>
-              <span data-lang="ar">الكمية: من 10 كيلو إلى 20 كيلو</span>
-              <span data-lang="en">Quantity: From 10 kg to 20 kg</span>
-            </div>
-
-            <div class="package-price-box">
-              <div class="price-main-row">
-                <span class="price-amount">400</span>
-                <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
-                <span class="price-currency" data-lang="en">EGP / kg</span>
-                <span class="price-old" data-lang="ar">500 ج</span>
-                <span class="price-old" data-lang="en">500 EGP</span>
+        <div class="packages-grid">
+          <!-- Cold Package 1: Daily Home & Tasting Pack (500 EGP) -->
+          <div class="package-card">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-snowflake"></i>
+                  <span data-lang="ar">عصرة بارد • للمنزل</span>
+                  <span data-lang="en">Cold Press • Home</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20500%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
               </div>
-              <div class="savings-pill">
-                <i class="fa-solid fa-bolt"></i>
-                <span data-lang="ar">بدلاً من 500 جنيه — توفير 100 جنيه في كل كيلو</span>
-                <span data-lang="en">Instead of 500 EGP — Save 100 EGP per kg</span>
+
+              <h3 class="package-title" data-lang="ar">باقة البيت والتذوق</h3>
+              <h3 class="package-title" data-lang="en">Daily Home & Tasting Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Daily Home & Tasting Pack (Cold Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة البيت والتذوق — عصرة أولى على البارد</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span data-lang="ar">الكمية: من 1 كيلو إلى 9 كيلو</span>
+                <span data-lang="en">Quantity: From 1 kg to 9 kg</span>
               </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">500</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">550 ج</span>
+                  <span class="price-old" data-lang="en">550 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-tag"></i>
+                  <span data-lang="ar">بدلاً من 550 جنيه — توفير 50 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 550 EGP — Save 50 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">عصرة أولى على البارد — طبيعي 100%</span>
+                  <span data-lang="en">First cold pressed — 100% natural</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">مثالية للتجربة والاستهلاك المنزلي اليومي</span>
+                  <span data-lang="en">Ideal for tasting & daily home use</span>
+                </li>
+              </ul>
             </div>
 
-            <ul class="package-features">
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">خيار مثالي للعائلات وخزين البيت السنوي</span>
-                <span data-lang="en">Perfect for families & seasonal home stock</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">توفير يصل إلى 2,000 جنيه على إجمالي الباقة</span>
-                <span data-lang="en">Save up to 2,000 EGP on total package</span>
-              </li>
-            </ul>
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20500%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة البيت (بارد)</span>
+              <span data-lang="en">Order Home Pack (Cold)</span>
+            </a>
           </div>
 
-          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20Family%20%26%20Group%20Value%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20400%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="btn-package-wa">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span data-lang="ar">اطلب باقة العيلة عبر واتساب</span>
-            <span data-lang="en">Order Family Pack via WhatsApp</span>
-          </a>
+          <!-- Cold Package 2: Family & Group Value Pack (450 EGP - Featured) -->
+          <div class="package-card featured">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-crown"></i>
+                  <span data-lang="ar">الأكثر طلباً • عصرة بارد</span>
+                  <span data-lang="en">Most Popular • Cold Press</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
+              <h3 class="package-title" data-lang="ar">باقة العيلة والتوفير</h3>
+              <h3 class="package-title" data-lang="en">Family & Group Value Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Family & Group Value Pack (Cold Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة العيلة والتوفير — عصرة أولى على البارد</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-people-group"></i>
+                <span data-lang="ar">الكمية: من 10 كيلو إلى 20 كيلو</span>
+                <span data-lang="en">Quantity: From 10 kg to 20 kg</span>
+              </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">450</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">550 ج</span>
+                  <span class="price-old" data-lang="en">550 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span data-lang="ar">بدلاً من 550 جنيه — توفير 100 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 550 EGP — Save 100 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">خيار مثالي للعائلات وخزين البيت السنوي</span>
+                  <span data-lang="en">Perfect for families & seasonal home stock</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">توفير يصل إلى 2,000 جنيه على إجمالي الباقة</span>
+                  <span data-lang="en">Save up to 2,000 EGP on total package</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة العيلة (بارد)</span>
+              <span data-lang="en">Order Family Pack (Cold)</span>
+            </a>
+          </div>
+
+          <!-- Cold Package 3: Bulk & Business Partner Pack (425 EGP) -->
+          <div class="package-card">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  <span data-lang="ar">جملة وتوريد • عصرة بارد</span>
+                  <span data-lang="en">Bulk & Partners • Cold</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20425%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
+              <h3 class="package-title" data-lang="ar">باقة الشركاء والتوريد</h3>
+              <h3 class="package-title" data-lang="en">Bulk & Business Partner Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Bulk & Business Partner Pack (Cold Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة الشركاء والتوريد — عصرة أولى على البارد</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-box-open"></i>
+                <span data-lang="ar">الكمية: 21 كيلو فأكثر (تبدأ بكرتونة 21 كيلو)</span>
+                <span data-lang="en">Quantity: 21+ kg (Starts with 21 kg Carton)</span>
+              </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">425</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">550 ج</span>
+                  <span class="price-old" data-lang="en">550 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-award"></i>
+                  <span data-lang="ar">بدلاً من 550 جنيه — توفير 125 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 550 EGP — Save 125 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">سعر خاص للتجار والمطاعم وطلبات الجملة</span>
+                  <span data-lang="en">Special wholesale rate for retailers & businesses</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">تغليف كرتونة محكمة (21 كيلو) جاهزة للشحن</span>
+                  <span data-lang="en">Secure 21 kg carton packaging ready for shipping</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%AF)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20425%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة الشركاء (بارد)</span>
+              <span data-lang="en">Order Partner Pack (Cold)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. FIRST HOT PRESSED PACKAGES -->
+      <div class="press-category-block">
+        <div class="press-category-header hot-press">
+          <div class="press-title-group">
+            <div class="press-type-icon">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <div>
+              <h3 data-lang="ar">ثانياً: باقات عصرة أولى على الحار (First Hot Pressed)</h3>
+              <h3 data-lang="en">2. First Hot Pressed Packages</h3>
+              <p data-lang="ar">نكهة تقليدية قوية وقوام غني مثالي للطهي والتسبيك — متوفر (مرسى مطروح / سيوة)</p>
+              <p data-lang="en">Rich traditional flavor & body, ideal for cooking — Available (Marsa Matrouh / Siwa)</p>
+            </div>
+          </div>
+          <span class="press-tag-pill">
+            <i class="fa-solid fa-fire"></i>
+            <span data-lang="ar">خصومات من 500 ج للكيلو</span>
+            <span data-lang="en">Discounted from 500 EGP/kg</span>
+          </span>
         </div>
 
-        <!-- Package 3: Bulk & Business Partner Pack -->
-        <div class="package-card">
-          <div>
-            <div class="package-top-bar">
-              <span class="package-badge">
-                <i class="fa-solid fa-boxes-stacked"></i>
-                <span data-lang="ar">للجملة والتوريد</span>
-                <span data-lang="en">Bulk & Partners</span>
-              </span>
-              <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20Bulk%20%26%20Business%20Partner%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20385%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-
-            <h3 class="package-title" data-lang="ar">باقة الشركاء والتوريد</h3>
-            <h3 class="package-title" data-lang="en">Bulk & Business Partner Pack</h3>
-            <span class="package-sub-en" data-lang="ar">Bulk & Business Partner Pack</span>
-            <span class="package-sub-en" data-lang="en">باقة الشركاء والتوريد</span>
-
-            <div class="package-qty-pill">
-              <i class="fa-solid fa-box-open"></i>
-              <span data-lang="ar">الكمية: 21 كيلو فأكثر (تبدأ بكرتونة 21 كيلو)</span>
-              <span data-lang="en">Quantity: 21+ kg (Starts with 21 kg Carton)</span>
-            </div>
-
-            <div class="package-price-box">
-              <div class="price-main-row">
-                <span class="price-amount">385</span>
-                <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
-                <span class="price-currency" data-lang="en">EGP / kg</span>
-                <span class="price-old" data-lang="ar">500 ج</span>
-                <span class="price-old" data-lang="en">500 EGP</span>
+        <div class="packages-grid">
+          <!-- Hot Package 1: Daily Home & Tasting Pack (450 EGP) -->
+          <div class="package-card hot-card">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-fire-flame-curved"></i>
+                  <span data-lang="ar">عصرة حار • للمنزل</span>
+                  <span data-lang="en">Hot Press • Home</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
               </div>
-              <div class="savings-pill">
-                <i class="fa-solid fa-Handshake"></i>
-                <i class="fa-solid fa-award"></i>
-                <span data-lang="ar">بدلاً من 500 جنيه — توفير 115 جنيه في كل كيلو</span>
-                <span data-lang="en">Instead of 500 EGP — Save 115 EGP per kg</span>
+
+              <h3 class="package-title" data-lang="ar">باقة البيت والتذوق</h3>
+              <h3 class="package-title" data-lang="en">Daily Home & Tasting Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Daily Home & Tasting Pack (Hot Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة البيت والتذوق — عصرة أولى على الحار</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span data-lang="ar">الكمية: من 1 كيلو إلى 9 كيلو</span>
+                <span data-lang="en">Quantity: From 1 kg to 9 kg</span>
               </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">450</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">500 ج</span>
+                  <span class="price-old" data-lang="en">500 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-tag"></i>
+                  <span data-lang="ar">بدلاً من 500 جنيه — توفير 50 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 500 EGP — Save 50 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">عصرة أولى على الحار — طبيعي 100%</span>
+                  <span data-lang="en">First hot pressed — 100% natural</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">ممتاز للطهي اليومي والمخبوزات والاستهلاك المنزلي</span>
+                  <span data-lang="en">Great for daily cooking, baking & home use</span>
+                </li>
+              </ul>
             </div>
 
-            <ul class="package-features">
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">سعر خاص للتجار والمطاعم وطلبات الجملة</span>
-                <span data-lang="en">Special wholesale rate for retailers & businesses</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-circle-check"></i>
-                <span data-lang="ar">تغليف كرتونة محكمة (21 كيلو) جاهزة للشحن</span>
-                <span data-lang="en">Secure 21 kg carton packaging ready for shipping</span>
-              </li>
-            </ul>
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%20%D9%88%D8%A7%D9%84%D8%AA%D8%B0%D9%88%D9%82%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%201%20%D8%A5%D9%84%D9%89%209%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20450%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة البيت (حار)</span>
+              <span data-lang="en">Order Home Pack (Hot)</span>
+            </a>
           </div>
 
-          <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20Bulk%20%26%20Business%20Partner%20Pack)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20385%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%A1." target="_blank" rel="noopener" class="btn-package-wa">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span data-lang="ar">اطلب باقة الشركاء عبر واتساب</span>
-            <span data-lang="en">Order Partner Pack via WhatsApp</span>
-          </a>
+          <!-- Hot Package 2: Family & Group Value Pack (400 EGP - Featured) -->
+          <div class="package-card hot-card featured">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-crown"></i>
+                  <span data-lang="ar">أفضل توفير • عصرة حار</span>
+                  <span data-lang="en">Best Value • Hot Press</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20400%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
+              <h3 class="package-title" data-lang="ar">باقة العيلة والتوفير</h3>
+              <h3 class="package-title" data-lang="en">Family & Group Value Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Family & Group Value Pack (Hot Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة العيلة والتوفير — عصرة أولى على الحار</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-people-group"></i>
+                <span data-lang="ar">الكمية: من 10 كيلو إلى 20 كيلو</span>
+                <span data-lang="en">Quantity: From 10 kg to 20 kg</span>
+              </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">400</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">500 ج</span>
+                  <span class="price-old" data-lang="en">500 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span data-lang="ar">بدلاً من 500 جنيه — توفير 100 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 500 EGP — Save 100 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">خيار اقتصادي ممتاز لخزين العائلات والمجموعات</span>
+                  <span data-lang="en">Economic choice for families & group sharing</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">توفير يصل إلى 2,000 جنيه على إجمالي الباقة</span>
+                  <span data-lang="en">Save up to 2,000 EGP on total package</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B9%D9%8A%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B1%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%20%D9%85%D9%86%2010%20%D8%A5%D9%84%D9%89%2020%20%D9%83%D9%8A%D9%84%D9%88%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20400%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة العيلة (حار)</span>
+              <span data-lang="en">Order Family Pack (Hot)</span>
+            </a>
+          </div>
+
+          <!-- Hot Package 3: Bulk & Business Partner Pack (385 EGP) -->
+          <div class="package-card hot-card">
+            <div>
+              <div class="package-top-bar">
+                <span class="package-badge">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  <span data-lang="ar">جملة وتوريد • عصرة حار</span>
+                  <span data-lang="en">Bulk & Partners • Hot</span>
+                </span>
+                <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20385%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="package-wa-icon" title="اطلب الباقة عبر واتساب">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+
+              <h3 class="package-title" data-lang="ar">باقة الشركاء والتوريد</h3>
+              <h3 class="package-title" data-lang="en">Bulk & Business Partner Pack</h3>
+              <span class="package-sub-en" data-lang="ar">Bulk & Business Partner Pack (Hot Pressed)</span>
+              <span class="package-sub-en" data-lang="en">باقة الشركاء والتوريد — عصرة أولى على الحار</span>
+
+              <div class="package-qty-pill">
+                <i class="fa-solid fa-box-open"></i>
+                <span data-lang="ar">الكمية: 21 كيلو فأكثر (تبدأ بكرتونة 21 كيلو)</span>
+                <span data-lang="en">Quantity: 21+ kg (Starts with 21 kg Carton)</span>
+              </div>
+
+              <div class="package-price-box">
+                <div class="price-main-row">
+                  <span class="price-amount">385</span>
+                  <span class="price-currency" data-lang="ar">جنيه / للكيلو</span>
+                  <span class="price-currency" data-lang="en">EGP / kg</span>
+                  <span class="price-old" data-lang="ar">500 ج</span>
+                  <span class="price-old" data-lang="en">500 EGP</span>
+                </div>
+                <div class="savings-pill">
+                  <i class="fa-solid fa-award"></i>
+                  <span data-lang="ar">بدلاً من 500 جنيه — توفير 115 جنيه في كل كيلو</span>
+                  <span data-lang="en">Instead of 500 EGP — Save 115 EGP per kg</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">أفضل سعر جملة للمطاعم والتجار والموزعين</span>
+                  <span data-lang="en">Best wholesale price for restaurants & traders</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-lang="ar">تغليف كرتونة محكمة (21 كيلو) جاهزة للشحن</span>
+                  <span data-lang="en">Secure 21 kg carton packaging ready for shipping</span>
+                </li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/201284935279?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20(%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%20-%20%D8%B9%D8%B5%D8%B1%D8%A9%20%D8%A3%D9%88%D9%84%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B1)%20%7C%20%D8%A7%D9%84%D9%83%D9%85%D9%8A%D8%A9%3A%2021%20%D9%83%D9%8A%D9%84%D9%88%20%D9%81%D8%A3%D9%83%D8%AB%D8%B1%20(%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%A8%D9%83%D8%B1%D8%AA%D9%88%D9%86%D8%A9%2021%20%D9%83%D9%8A%D9%84%D9%88)%20%7C%20%D8%A8%D8%B3%D8%B9%D8%B1%20385%20%D8%AC%D9%86%D9%8A%D9%87%20%D9%84%D9%84%D9%83%D9%8A%D9%84%D9%88%20%D9%85%D9%86%20%D8%B2%D9%8A%D8%AA%20%D8%B2%D9%8A%D8%AA%D9%88%D9%86%20%D8%A3%D9%88%D9%84%D9%8A%D8%B1%D8%A7%20(Olira)." target="_blank" rel="noopener" class="btn-package-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-lang="ar">اطلب باقة الشركاء (حار)</span>
+              <span data-lang="en">Order Partner Pack (Hot)</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -2055,37 +2411,42 @@
     </div>
   </section>
 
-  <!-- Brand Label Showcase Section -->
+  <!-- Brand Identity & Label Showcase Section -->
   <section id="identity" class="label-showcase-section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag" style="background: rgba(213, 180, 103, 0.2); color: var(--gold-light);" data-lang="ar">علامتنا الأصلية</span>
-        <span class="section-tag" style="background: rgba(213, 180, 103, 0.2); color: var(--gold-light);" data-lang="en">Authentic Brand Seal</span>
-        <h2 class="section-title" data-lang="ar">تأكد من علامة «البراء» الأصلية على العبوة</h2>
-        <h2 class="section-title" data-lang="en">Look for the Official Al-Baraa Bottle Label</h2>
+        <span class="section-tag" style="background: rgba(213, 180, 103, 0.2); color: var(--gold-light);" data-lang="en">Authentic Brand Identity</span>
+        <h2 class="section-title" data-lang="ar">هوية وملصق عبوات «أوليرا - Olira» الأصلية</h2>
+        <h2 class="section-title" data-lang="en">Official Olira Olive Oil Brand Identity & Bottle Label</h2>
         <p class="section-subtitle" data-lang="ar">
-          تحمل كل عبوة من عبوات البراء ملصق الجودة الأصلي باللغتين العربية والإنجليزية مع تحديد نوع الزيت وتاريخ الإنتاج وبيانات التواصل المباشرة.
+          تحمل كل عبوة من عبوات أوليرا ملصق الجودة الأصلي مع تحديد نوع الزيت (مرسى مطروح / سيوة)، نوع العصرة (بارد / حار)، وتاريخ الإنتاج وبيانات التواصل المباشرة.
         </p>
         <p class="section-subtitle" data-lang="en">
-          Every bottle of Al-Baraa carries our official bilingual quality seal indicating the olive variety, production date, and direct contact details.
+          Every bottle of Olira carries our official quality seal indicating the olive source (Matrouh / Siwa), press type (Cold / Hot), production date, and direct contact info.
         </p>
       </div>
 
       <div class="label-tabs">
-        <button class="label-tab-btn active" id="tab-ar" onclick="showLabel('ar')">
-          <i class="fa-solid fa-eye"></i>
-          <span data-lang="ar">شريط القارورة (عربي)</span>
-          <span data-lang="en">Arabic Bottle Label</span>
+        <button class="label-tab-btn active" id="tab-cover" onclick="showIdentityMedia('cover')">
+          <i class="fa-solid fa-image"></i>
+          <span data-lang="ar">غلاف وعبوات أوليرا</span>
+          <span data-lang="en">Olira Bottles & Cover</span>
         </button>
-        <button class="label-tab-btn" id="tab-en" onclick="showLabel('en')">
-          <i class="fa-solid fa-eye"></i>
-          <span data-lang="ar">شريط القارورة (إنجليزي)</span>
-          <span data-lang="en">English Bottle Label</span>
+        <button class="label-tab-btn" id="tab-label" onclick="showIdentityMedia('label')">
+          <i class="fa-solid fa-tag"></i>
+          <span data-lang="ar">شريط القارورة الرسمي</span>
+          <span data-lang="en">Official Bottle Label</span>
+        </button>
+        <button class="label-tab-btn" id="tab-logo" onclick="showIdentityMedia('logo')">
+          <i class="fa-solid fa-certificate"></i>
+          <span data-lang="ar">شعار أوليرا (Logo)</span>
+          <span data-lang="en">Olira Emblem Logo</span>
         </button>
       </div>
 
       <div class="label-preview-box">
-        <img id="showcase-label-img" src="Images/شريط القارورة عربي.jpeg" alt="Al-Baraa Bottle Label" />
+        <img id="showcase-label-img" src="Images/Cover.jpeg" alt="Olira Olive Oil Identity" />
       </div>
     </div>
   </section>
@@ -2104,10 +2465,10 @@
             From Matrouh to Your Doorstep Anywhere in Egypt!
           </h2>
           <p class="section-subtitle" data-lang="ar">
-            سواء كنت داخل مدينة مرسى مطروح أو في أي محافظة من محافظات جمهورية مصر العربية، نضمن وصول زيت زيتون البراء إليك بأعلى معايير الأمان والتغليف المحكم.
+            سواء كنت داخل مدينة مرسى مطروح أو في أي محافظة من محافظات جمهورية مصر العربية، نضمن وصول زيت زيتون أوليرا إليك بأعلى معايير الأمان والتغليف المحكم.
           </p>
           <p class="section-subtitle" data-lang="en">
-            Whether you are in Marsa Matrouh or anywhere across Egypt's governorates, we guarantee safe, leak-proof, and fast delivery right to your home.
+            Whether you are in Marsa Matrouh or anywhere across Egypt's governorates, we guarantee safe, leak-proof, and fast delivery of Olira Olive Oil right to your home.
           </p>
 
           <div class="delivery-steps">
@@ -2129,7 +2490,7 @@
         </div>
 
         <div class="delivery-map-visual">
-          <i class="fa-solid fa-truck-Ramp-box fa-truck-moving main-truck"></i>
+          <i class="fa-solid fa-truck-moving main-truck"></i>
           <h3 data-lang="ar">من المعصرة إلى بيتك</h3>
           <h3 data-lang="en">From the Press to Your Home</h3>
           <p data-lang="ar" style="font-size: 0.95rem; opacity: 0.9;">تغطية شاملة داخل مطروح وجميع محافظات الجمهورية</p>
@@ -2168,7 +2529,7 @@
       </div>
 
       <div class="info-grid">
-        <!-- Working Hours Card (Exact match to provided schedule) -->
+        <!-- Working Hours Card -->
         <div class="hours-card">
           <div>
             <div class="hours-header">
@@ -2285,10 +2646,10 @@
             </h3>
 
             <p style="color: var(--text-muted);" data-lang="ar">
-              يمكنكم الحصول على منتجات زيت زيتون البراء مباشرة من موزعنا المعتمد في مدينة مرسى مطروح أو التواصل معه للاستفسار والطلب:
+              يمكنكم الحصول على منتجات زيت زيتون أوليرا (Olira) مباشرة من موزعنا المعتمد في مدينة مرسى مطروح أو التواصل معه للاستفسار والطلب:
             </p>
             <p style="color: var(--text-muted);" data-lang="en">
-              You can purchase Al-Baraa Olive Oil directly from our authorized distributor in Marsa Matrouh or contact them directly:
+              You can purchase Olira Olive Oil directly from our authorized distributor in Marsa Matrouh or contact them directly:
             </p>
 
             <div class="dist-box">
@@ -2408,9 +2769,9 @@
           <h3 data-lang="en">Official Email Address</h3>
           <p data-lang="ar">للتعاقدات، طلبات الشركات والتوريد، والاستفسارات الرسمية</p>
           <p data-lang="en">For business inquiries, wholesale supply, and official correspondence</p>
-          <div class="phone-number-ltr" style="font-size: 1.05rem;">albaraa.olivoil@gmail.com</div>
+          <div class="phone-number-ltr" style="font-size: 1.05rem;">olira.olivoil@gmail.com</div>
           <div class="dist-actions">
-            <a href="mailto:albaraa.olivoil@gmail.com" class="btn-contact-sm btn-call" style="width: 100%;">
+            <a href="mailto:olira.olivoil@gmail.com" class="btn-contact-sm btn-call" style="width: 100%;">
               <i class="fa-solid fa-paper-plane"></i>
               <span data-lang="ar">إرسال بريد إلكتروني</span>
               <span data-lang="en">Send Email</span>
@@ -2425,13 +2786,18 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-col">
-        <h4 class="serif-title" style="font-size: 1.7rem; color: var(--gold-light);" data-lang="ar">البَـرَاءُ لزيت الزيتون</h4>
-        <h4 class="serif-title" style="font-size: 1.7rem; color: var(--gold-light);" data-lang="en">AL-BARAA Olive Oil</h4>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+          <img src="Images/بروفايل.jpeg" alt="Olira Logo" style="width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--gold-primary); object-fit: cover;" />
+          <div>
+            <h4 class="serif-title" style="font-size: 1.7rem; color: var(--gold-light); margin-bottom: 0;" data-lang="ar">أُولِـيـرَا لزيت الزيتون</h4>
+            <h4 class="serif-title" style="font-size: 1.7rem; color: var(--gold-light); margin-bottom: 0;" data-lang="en">OLIRA Olive Oil</h4>
+          </div>
+        </div>
         <p data-lang="ar">
-          زيت زيتون بكر ممتاز — عصرة أولى على البارد طبيعي 100%. من مزارع ومعاصر مرسى مطروح وسيوة إلى بيتك مباشرة.
+          زيت زيتون بكر ممتاز — عصرة أولى (على البارد & على الحار) طبيعي 100%. من مزارع ومعاصر مرسى مطروح وسيوة إلى بيتك مباشرة.
         </p>
         <p data-lang="en">
-          Extra Virgin Olive Oil — First Cold Pressed 100% Natural. From the groves and presses of Marsa Matrouh & Siwa directly to your home.
+          Extra Virgin Olive Oil — First Cold & Hot Pressed 100% Natural. From the groves and presses of Marsa Matrouh & Siwa directly to your home.
         </p>
         <p style="margin-top: 12px; color: var(--gold-light);">
           <i class="fa-solid fa-location-dot"></i>
@@ -2454,8 +2820,11 @@
           <span data-lang="en">Distributor (Lulu Bookstore - K7): </span>
           <span dir="ltr">+20 101 192 4773</span>
         </a>
-        <a href="mailto:albaraa.olivoil@gmail.com">
-          <i class="fa-solid fa-envelope"></i> albaraa.olivoil@gmail.com
+        <a href="mailto:olira.olivoil@gmail.com">
+          <i class="fa-solid fa-envelope"></i> olira.olivoil@gmail.com
+        </a>
+        <a href="https://github.com/king-of-noobsx/Olira_OlivOil" target="_blank" rel="noopener">
+          <i class="fa-solid fa-globe"></i> github.com/king-of-noobsx/Olira_OlivOil
         </a>
       </div>
 
@@ -2475,8 +2844,8 @@
     </div>
 
     <div class="footer-bottom">
-      <p data-lang="ar">© جميع الحقوق محفوظة لبراند البراء لزيت الزيتون - مرسى مطروح، مصر.</p>
-      <p data-lang="en">© All Rights Reserved — Al-Baraa Olive Oil, Marsa Matrouh, Egypt.</p>
+      <p data-lang="ar">© جميع الحقوق محفوظة لبراند أوليرا لزيت الزيتون (Olira Olive Oil) - مرسى مطروح، مصر.</p>
+      <p data-lang="en">© All Rights Reserved — Olira Olive Oil, Marsa Matrouh, Egypt.</p>
     </div>
   </footer>
 
@@ -2495,25 +2864,29 @@
       htmlEl.setAttribute('lang', nextLang);
       htmlEl.setAttribute('dir', nextLang === 'ar' ? 'rtl' : 'ltr');
 
-      // Sync label preview image with chosen language automatically
-      showLabel(nextLang);
       updateLiveWorkingStatus();
     }
 
-    // Interactive Bottle Label Switcher
-    function showLabel(lang) {
+    // Interactive Brand Identity Media Switcher (Cover / Bottle Label / Logo)
+    function showIdentityMedia(type) {
       const img = document.getElementById('showcase-label-img');
-      const tabAr = document.getElementById('tab-ar');
-      const tabEn = document.getElementById('tab-en');
+      const tabCover = document.getElementById('tab-cover');
+      const tabLabel = document.getElementById('tab-label');
+      const tabLogo = document.getElementById('tab-logo');
 
-      if (lang === 'ar') {
+      tabCover.classList.remove('active');
+      tabLabel.classList.remove('active');
+      tabLogo.classList.remove('active');
+
+      if (type === 'cover') {
+        img.src = 'Images/Cover.jpeg';
+        tabCover.classList.add('active');
+      } else if (type === 'label') {
         img.src = 'Images/شريط القارورة عربي.jpeg';
-        tabAr.classList.add('active');
-        tabEn.classList.remove('active');
-      } else {
-        img.src = 'Images/شريط القارورة إنجليزي.jpeg';
-        tabEn.classList.add('active');
-        tabAr.classList.remove('active');
+        tabLabel.classList.add('active');
+      } else if (type === 'logo') {
+        img.src = 'Images/بروفايل.jpeg';
+        tabLogo.classList.add('active');
       }
     }
 
